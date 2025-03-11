@@ -23,7 +23,7 @@ const Gallery = () => {
   return (
     <div id="gallery" className='bg-amber-900 flex w-full justify-center p-5'>
       
-      <div className='flex flex-col space-y-4 w-screen md:w-1/2'>
+      <div className='flex flex-col space-y-4 w-screen lg:w-[1000px] md:w-1/2 sm:w-[700px]'>
         <img src={image.image} alt={image.alt} className='w-full h-96 object-cover' />
         <div className='flex justify-between'>
           <button onClick={() => handleImageChange(index - 1)} className='bg-black text-white p-2 rounded hover:bg-gray-900 hover:text-white'>Previous</button>

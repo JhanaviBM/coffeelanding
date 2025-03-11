@@ -12,7 +12,7 @@ const Navbar = () => {
     }
   return (
     <div className='bg-amber-950 text-white'>
-      <ul className="list-none flex justify-end p-4 space-x-8 text-3xl">
+      <ul className="list-none flex justify-end p-4 space-x-8 text-3xl lg:text-2xl md:text-1xl sm:text-[20px]">
         <li onClick = {handleAbout}>About</li>
         <li onClick = {handleGallery}>Gallery</li>
         <li onClick= {handleContact}>Contact</li>
