@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-black text-white align-bottom justify-center text-center h-15 bottom-0">
+    <div className="bg-black text-white text-center py-4 w-full">
       Copyright © 2008 Coffee Inc. All rights reserved.
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;

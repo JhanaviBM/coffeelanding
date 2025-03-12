@@ -4,10 +4,10 @@ import Hero from "./Hero";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
-import Coffe from "./components/Coffe";
+import Coffe from "./components/ChildCoffee";
 import InsideACoffe from "./components/InsideACoffe";
 import App from "./App";
-import Coffee from "./Coffee";
+import Coffee from "./ParentCoffee";
 
 const routes = [
   {
@@ -34,23 +34,11 @@ const routes = [
       {
         path: "know-more",
         element: <Coffee />,
-        children: [
-          {
-            path: "",
-            element: <Coffe />,
-            children: [
-              {
-                path: ":id",
-                element: <Coffee />,
-              },
-            ],
-          },
-          {
-            path: "inside",
-            element: <InsideACoffe />,
-          },
-        ],
       },
+      {
+        path: "inside/:id",
+        element: <Coffe />,
+        },
     ],
   },
 ];

@@ -1,11 +1,13 @@
-import React from 'react'
+import { useParams } from "react-router-dom";
 
 const InsideACoffe = () => {
-  return (
-      <div className='bg-amber-700 h-screen w-screen flex justify-center items-center'>
-          <div className='bg-orange-400 p-5 rounded-4xl'>Hello Coffe</div>
-    </div>
-  )
-}
+  const { id } = useParams();
 
-export default InsideACoffe
+  return (
+    <div>
+      <h2>Details of Coffee ID: {id}</h2>
+    </div>
+  );
+};
+
+export default InsideACoffe;

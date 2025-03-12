@@ -1,8 +1,4 @@
 import React, { StrictMode } from "react";
-import Layout from "./Layout";
-import About from "./components/About";
-import Gallery from "./components/Gallery";
-import Contact from "./components/Contact";
 import Header from "./Header";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
