@@ -1,11 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Link, Outlet } from 'react-router'
 
 const Coffe = () => {
   return (
       <div>Welcome to Coffee Page
           <div>
-              <Link to="/know-more/inside">Click here</Link>
+        <Link to="inside">Click here</Link>
+     
           </div>
     </div>
   )

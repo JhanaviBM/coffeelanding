@@ -21,7 +21,7 @@ const About = () => {
               </p>
               <div className="pt-30 lg:pt-10 lg:text-4xl md:pt-10 sm:pt-10">
                   Wanna know more?
-                  <a href="/know-more" className="bg-amber-100 text-black p-2 rounded-3xl hover:bg-amber-900 hover:text-white block w-50 text-center">Know More</a>
+                  <Link to="/know-more" className="bg-amber-100 text-black p-2 rounded-3xl hover:bg-amber-900 hover:text-white block w-50 text-center">Know More</Link>
               </div>
       </div>
     </div>
