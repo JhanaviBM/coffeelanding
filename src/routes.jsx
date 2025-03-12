@@ -38,6 +38,12 @@ const routes = [
           {
             path: "",
             element: <Coffe />,
+            children: [
+              {
+                path: ":id",
+                element: <Coffee />,
+              },
+            ],
           },
           {
             path: "inside",
