@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "./Layout";
-import Hero from "./Hero";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
@@ -18,7 +17,6 @@ const routes = [
         path: "",
         element: <Layout />,
       },
-
       {
         path: "about",
         element: <About />,
@@ -33,12 +31,21 @@ const routes = [
       },
       {
         path: "know-more",
-        element: <Coffee />,
+        children: [
+          {
+            path: "",
+            element: <Coffee />,
+          },
+          {
+            path: "inside/:id",
+            element: <Coffe />,
+          },
+          {
+            path: "inside/:id/:ratingId",
+            element: <InsideACoffe />,
+          },
+        ],
       },
-      {
-        path: "inside/:id",
-        element: <Coffe />,
-        },
     ],
   },
 ];
